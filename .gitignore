@@ -3,6 +3,11 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+wyprzedaz/*
+
+items_to_add.txt
+update_items_task.md
+
 # C extensions
 *.so
 

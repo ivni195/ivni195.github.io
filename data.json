@@ -1,0 +1,123 @@
+{
+  "translations": {
+    "en": {
+      "title": "Move Out Sale",
+      "status_sold": "SOLD",
+      "status_available": "AVAILABLE",
+      "label_available": "Available:"
+    },
+    "jp": {
+      "title": "引越しセール",
+      "status_sold": "売切れ",
+      "status_available": "販売中",
+      "label_available": "受取可能:"
+    }
+  },
+  "items": [
+    {
+      "name": { "en": "Ibanez GIO GRX70QA", "jp": "Ibanez GIO GRX70QA" },
+      "image": "images/ibanez.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Large pot 33.5 x 22 x 24.5 cm (Induction compatible)", "jp": "大きな鍋 33.5 x 22 x 24.5 cm (IH対応)" },
+      "image": "images/largepot.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Bed frame 210 x 100 x 58 cm", "jp": "ベッドフレーム 210 x 100 x 58 cm" },
+      "image": "images/bedframe.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Armchair", "jp": "アームチェア" },
+      "image": "images/armchair.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Small pot", "jp": "小さな鍋" },
+      "image": "images/smallpot.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Electric blanket 200 x 150 cm", "jp": "電気毛布 200 x 150 cm" },
+      "image": "images/elecblanket.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Hair dryer", "jp": "ドライヤー" },
+      "image": "images/hairdry.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Frying pan", "jp": "フライパン" },
+      "image": "images/fryingpan.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Vacuum cleaner", "jp": "掃除機" },
+      "image": "images/vacuum.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Dumbbells 2 x 10 kg", "jp": "ダンベル 2 x 10 kg" },
+      "image": "images/dumbbells.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Humidifier", "jp": "加湿器" },
+      "image": "images/humidifier.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Push-up bars", "jp": "プッシュアップバー" },
+      "image": "images/pushup.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Knife sharpener", "jp": "包丁研ぎ器" },
+      "image": "images/sharpener.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Electric Stove 1,200 W", "jp": "電気コンロ 1,200 W" },
+      "image": "images/heater.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    },
+    {
+      "name": { "en": "Body scale", "jp": "体重計" },
+      "image": "images/bodyscale.jpg",
+      "price": 0,
+      "sold": false,
+      "available_from": { "en": "March 40th", "jp": "3月40日" }
+    }
+  ]
+}
