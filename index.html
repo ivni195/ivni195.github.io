@@ -134,11 +134,65 @@
 
     <div class="header-container">
         <h1 id="page-title">Move Out Sale</h1>
-        <select id="lang-switch" class="lang-selector">
-            <option value="en">English</option>
-            <option value="jp">日本語</option>
-        </select>
+        <div class="header-actions">
+            <button id="contact-btn" class="btn-secondary" onclick="openContactModal()">Show contact info</button>
+            <select id="lang-switch" class="lang-selector">
+                <option value="en">English</option>
+                <option value="jp">日本語</option>
+            </select>
+        </div>
     </div>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal" onclick="closeContactModal()">
+        <span class="close-modal">&times;</span>
+        <div class="contact-modal-content">
+            <h2 id="contact-title" style="margin-top: 0;">Contact</h2>
+            <div id="contact-images-container" class="contact-images-grid"></div>
+        </div>
+    </div>
+
+    <style>
+        .header-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .btn-secondary {
+            padding: 6px 12px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background: #eee;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-secondary:hover {
+            background: #ddd;
+        }
+        .contact-modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 500px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .contact-images-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .contact-qr {
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+    </style>
 
     <!-- Modal for full image view -->
     <div id="image-modal" class="modal" onclick="closeModal()">
@@ -177,6 +231,32 @@
             document.getElementById('modal-img').src = '';
         }
 
+        function openContactModal() {
+            const titleEl = document.getElementById('contact-title');
+            if (titleEl) titleEl.textContent = translations[currentLang].contact_title;
+            const container = document.getElementById('contact-images-container');
+            if (container) {
+                container.innerHTML = '';
+                const contactImages = ['line.png', 'whatsapp.png'];
+                contactImages.forEach(imgName => {
+                    const img = document.createElement('img');
+                    img.src = `images/contact/${imgName}`;
+                    img.className = 'contact-qr';
+                    img.alt = imgName;
+                    img.onerror = () => img.style.display = 'none';
+                    container.appendChild(img);
+                });
+            }
+            document.getElementById('contact-modal').style.display = 'block';
+        }
+
+        function closeContactModal() {
+            document.getElementById('contact-modal').style.display = 'none';
+            const container = document.getElementById('contact-images-container');
+            if (container) container.innerHTML = '';
+        }
+
+
         function renderUI() {
             document.title = translations[currentLang].title;
             document.getElementById('page-title').textContent = translations[currentLang].title;
@@ -201,7 +281,7 @@
                     <img src="${item.image}" alt="${getName(item.name)}" class="item-image" onerror="this.src='https://via.placeholder.com/200x150?text=No+Image'">
                     <div class="item-info">
                         <p class="item-name">${getName(item.name)}</p>
-                        <p class="item-price">$${item.price.toFixed(2)}</p>
+                        <p class="item-price">${item.price}￥</p>
                         <p class="item-availability">${translations[currentLang].label_available} ${availText}</p>
                     </div>
                 `;
